@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 1</title>
+</head>
+
+<body>
+    <script>
+
+        let greeting="hello world";
+        console.log("string : "+greeting);
+
+        let age=22;
+        console.log("Number : "+age);
+
+        let isStudent = true;
+        console.log("boolean : "+isStudent);
+
+        let numbers = [1, 2, 3, 4, 5];
+        console.log("array : "+numbers);
+
+        let person = { name: "Alice", age: 25 };
+        console.log("object : "+person);
+
+        let y=null;
+        console.log("Null : "+y);
+
+
+        alert("hello world");
+
+
+
+        let arr = ['1', '2', '3', '4', '5', '6', '7'];
+        console.log("Original Array : " + arr);
+
+
+        let del = arr.splice(5, 1);
+        console.log("deleted  : " + del);
+        console.log("after removing no 6 : " + arr);
+
+        let alength = arr.length;
+        console.log("length : " + alength);
+
+
+        for (const element of arr) {
+            console.log(element);
+        }
+
+        let no = new Int16Array(arr);
+        console.log("Converted to number datatype : " + no);
+
+
+        let remlastthree = arr.splice(4, 3);
+        console.log(remlastthree);
+        console.log("after removing last three values from array : " + arr);
+
+        let add = arr.unshift("one", "two");
+        console.log(arr);
+
+        let array = ['1', '2', '3', '4', '5', '6', '7'];
+        let concatedstr = '';
+        let sum = 0;
+        array.forEach(item => {
+            concatedstr += item;
+            sum += parseInt(item);
+        });
+
+        console.log("concatenated string : " + concatedstr);
+        console.log("sum : " + sum);
+
+        let array2 = ['1', '2', '3', '4', '5', '6', '7'];
+        const result1 = array.filter(three);
+        function three(item) {
+            return item != 3;
+        }
+
+        console.log("before : " + array);
+        console.log("after removing 3 : " + result1);
+
+
+        console.log('Iterate the array and console the item, when the item is either "3", "6" or "7" : ');
+        array2.forEach(item => {
+            if (item === '3' || item === '6' || item === '7') {
+                console.log(item);
+            }
+        });
+
+
+        const arr1 = ['1', '2', '3', '4', '5', '6', '7'];
+        const arr2 = [1, 2, "3", 4, 5, 6, "7"];
+
+        arr1.forEach(item1 => {
+            arr2.forEach(item2 => {
+                if (typeof item1 === typeof item2) {
+                    console.log(`array1 item: ${item1}, array2 item: ${item2}`);
+                }
+            });
+        });
+
+
+        let ar = [0, 2, 3, 7, 5, 6, 8];
+
+        console.log(ar);
+
+        function multiply(value, index, ar) {
+            return value * index;
+        }
+        let result = arr2.map(multiply);
+        console.log(result);
+
+        let sumarr = 0;
+        result.forEach((num) => {
+            sumarr += num;
+        });
+
+        console.log(sumarr);
+        if (sumarr > 40) {
+            console.log(`${sumarr} Is greater than 40 `);
+        }
+        else {
+            console.log(`${sumarr} Is not greater than 40 `)
+        }
+
+
+
+        let ar1 = [1, 2, 3, 4];
+        let ar2 = [5, 6, 7, 8];
+
+        let merge = ar1.concat(ar2);
+        console.log("Concatenated array : " + merge);
+    </script>
+</body>
+
+</html>
