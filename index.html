@@ -9,34 +9,34 @@
 
 <body>
     <script>
+        // 1
+        let greeting = "hello world";
+        console.log("string : " + greeting);
 
-        let greeting="hello world";
-        console.log("string : "+greeting);
-
-        let age=22;
-        console.log("Number : "+age);
+        let age = 22;
+        console.log("Number : " + age);
 
         let isStudent = true;
-        console.log("boolean : "+isStudent);
+        console.log("boolean : " + isStudent);
 
         let numbers = [1, 2, 3, 4, 5];
-        console.log("array : "+numbers);
+        console.log("array : " + numbers);
 
         let person = { name: "Alice", age: 25 };
-        console.log("object : "+person);
+        console.log("object : " + person);
 
-        let y=null;
-        console.log("Null : "+y);
+        let y = null;
+        console.log("Null : " + y);
 
-
+        // 2
         alert("hello world");
 
-
+        // 3
 
         let arr = ['1', '2', '3', '4', '5', '6', '7'];
         console.log("Original Array : " + arr);
 
-
+        // a
         let del = arr.splice(5, 1);
         console.log("deleted  : " + del);
         console.log("after removing no 6 : " + arr);
@@ -48,17 +48,19 @@
         for (const element of arr) {
             console.log(element);
         }
+        // b
 
         let no = new Int16Array(arr);
         console.log("Converted to number datatype : " + no);
 
-
+        // c
         let remlastthree = arr.splice(4, 3);
         console.log(remlastthree);
         console.log("after removing last three values from array : " + arr);
 
         let add = arr.unshift("one", "two");
         console.log(arr);
+        // d
 
         let array = ['1', '2', '3', '4', '5', '6', '7'];
         let concatedstr = '';
@@ -71,6 +73,8 @@
         console.log("concatenated string : " + concatedstr);
         console.log("sum : " + sum);
 
+        // e
+
         let array2 = ['1', '2', '3', '4', '5', '6', '7'];
         const result1 = array.filter(three);
         function three(item) {
@@ -79,7 +83,7 @@
 
         console.log("before : " + array);
         console.log("after removing 3 : " + result1);
-
+        // f
 
         console.log('Iterate the array and console the item, when the item is either "3", "6" or "7" : ');
         array2.forEach(item => {
@@ -88,7 +92,7 @@
             }
         });
 
-
+        // g
         const arr1 = ['1', '2', '3', '4', '5', '6', '7'];
         const arr2 = [1, 2, "3", 4, 5, 6, "7"];
 
@@ -100,6 +104,7 @@
             });
         });
 
+        // h
 
         let ar = [0, 2, 3, 7, 5, 6, 8];
 
@@ -124,7 +129,7 @@
             console.log(`${sumarr} Is not greater than 40 `)
         }
 
-
+        // i
 
         let ar1 = [1, 2, 3, 4];
         let ar2 = [5, 6, 7, 8];
