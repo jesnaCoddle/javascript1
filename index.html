@@ -113,26 +113,19 @@
         function multiply(value, index, ar) {
             return value * index;
         }
-        let result = arr2.map(multiply);
+        let result = ar.map(multiply);
         console.log(result);
 
-        let sumarr = 0;
         result.forEach((num) => {
-            sumarr += num;
-        });
-
-        console.log(sumarr);
-        if (sumarr > 40) {
-            console.log(`${sumarr} Is greater than 40 `);
-        }
-        else {
-            console.log(`${sumarr} Is not greater than 40 `)
-        }
+            if (num > 40) {
+                console.log(num);
+            }
+        })
 
         // i
 
-        let ar1 = [1, 2, 3, 4];
-        let ar2 = [5, 6, 7, 8];
+        let ar1 = [1, 2, 3, 4, 5];
+        let ar2 = [6, 7, 8, 9, 10];
 
         let merge = ar1.concat(ar2);
         console.log("Concatenated array : " + merge);
